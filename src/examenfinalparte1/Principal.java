@@ -5,43 +5,41 @@ package examenfinalparte1;
  */
 public class Principal {
     
-    int i;
+    int totalOperaciones;
     
    /**
-     * Constructor sin paramatros que guarda dentro de la variable i un valor, en este caso -1
+     * Guarda dentro de la variable totalOperaciones un valor, en este caso -1
      */
     public Principal() { 
-        i=-1;
+        totalOperaciones=-1;
     }
     
     /**
-     * Constructor con paramatros que recibe dos valores, los envia al metodo met y guarda el resultado dentro de la variable i 
-     * @param j Tipo int
-     * @param m Tipo int
+     * Recibe dos valores, los envia al metodo suma y guarda el resultado dentro de la variable totalOperaciones 
+     * @param num1 Tipo int
+     * @param num2 Tipo int
      */
-    public Principal(int j, int m) {
+    public Principal(int num1, int num2) {
         
-        i=met(j,m);
+        totalOperaciones=suma(num1,num2);
     }
     
     /**
-     * Recibe un parametro, envia al metodo met dos veces el mismo parametro y guarda el resultado dentro de la variable i
-     * @param j Tipo int
+     * Recibe un parametro, envia al metodo suma dos veces el mismo parametro y guarda el resultado dentro de la variable totalOperaciones
+     * @param num Tipo int
      */
-    public Principal(int j) {
-        i=met(j,j);
+    public Principal(int num) {
+        totalOperaciones=suma(num,num);
     }
-    
-    
     
      /**
      * Recibe dos parmetros de tipo int y realiza una suma con ellos
      * @param x Tipo int
-     * @param x1 Tipo int
+     * @param y Tipo int
      * @return Retorna la suma de los enteros recibidos
      */
-    public int met(int x, int x1) {
-      return x + x1;
+    public int suma(int x, int y) {
+       return x + y;
     
     }
     
